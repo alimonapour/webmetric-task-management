@@ -1,34 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { GroupsTabsPanels } from './components/TasksContainer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='App'>
+      <div className='container w-[90%] lg:w-[60%] md:w-[80%] mx-auto my-2 p-5 border border-blue-600 rounded-md bg-white shadow-md shadow-gray-600 flex items-center flex-col'>
+        <div className='border-b-2 border-indigo-400 w-[60%]'>
+          <h1 className='text-xl font-bold leading-5 text-center p-2'>
+            Task Management App
+          </h1>
+        </div>
+        <GroupsTabsPanels />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
