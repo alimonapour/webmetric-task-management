@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        future: ['Future', 'sans-serif'],
         sans: ['Helvetica', 'Roboto', 'Inter', 'sans-serif'],
         mono: ['Roboto Mono'],
       },
